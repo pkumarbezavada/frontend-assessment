@@ -11,7 +11,7 @@ frontend skills assessment: build a contacts list
 
 ### instructions
 - Tools: feel free to add your favorite libs, only requirement is angular 6/angular cli application shell already generated for you
-- Design: style the contacts widget however you'd like. Know scss? Want to use Bill Murray profile pics? Show us you can style ui using web components. [Style ideas here](https://goo.gl/oSdpiW)
+- Design: style the contacts widget however you'd like. Know scss? Want to use Bill Murray profile pics? Show us you can style ui using web components. [Style ideas here](https://goo.gl/oSdpiW). You can also just grab bootstrap or material if you like.
 - Behavior requirements:
   - display list of 10 contacts
   - ability to add a new contact to the list
