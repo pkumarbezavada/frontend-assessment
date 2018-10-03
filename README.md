@@ -17,3 +17,7 @@ frontend skills assessment: build a contacts list
   - ability to add a new contact to the list
   - ability to delete a contact from the list
   - example data in contacts/src/example-data.ts
+
+### turning in assessment
+
+create a pull request with your fork once code sample is complete.
