@@ -4,7 +4,7 @@ frontend skills assessment: build a contacts list
 ## setup
 - fork repository: https://github.com/bitclave/frontend-assessment
 - ```git clone git@github.com:<your_github>/frontend-assessment.git```
-- ```npm install -g @angular/cli```
+- ```sudo npm install -g @angular/cli```
 - ```cd frontend-assessment/contacts && npm i```
 - ```ng serve```
 - view in browser at localhost:4200
