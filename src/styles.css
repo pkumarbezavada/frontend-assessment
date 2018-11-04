@@ -1,1 +1,183 @@
-/* You can add global styles to this file, and also import other style files */
+
+/*Global Styles in CSS Format*/
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+    margin: 0;
+    background: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+  }
+  #container {
+    display: grid;
+    grid-template-columns: 70px auto;
+    height: 100%;
+  }
+  #container #content {
+    padding: 30px 50px;
+  }
+  #container #content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #container #content ul li {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 8px;
+  }
+  #container #content ul li a {
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: #00ffb3;
+  }
+  #container #content ul li i {
+    font-size: 1.5rem;
+    padding: 1rem;
+    float: right;
+    cursor: pointer;
+    
+  }
+  #container #content ul li #deleteContact {
+
+    color: darkred;
+
+  }
+  #container #content ul li #editContact {
+
+    color: green;
+
+  }
+  #container #content ul li #favoriteContact {
+
+    color: pink;
+
+  }
+.card-body{
+display: block;
+
+}
+.card.contact-card{
+    
+  padding: 10px 0px 20px;
+  font-weight: bold;
+  
+  box-shadow:2px 2px 5px rgba(0,0,0, .5);
+  -webkit-box-shadow:2px 2px 5px rgba(0,0,0, .5);
+  -moz-box-shadow:2px 2px 5px rgba(0,0,0, .5);
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  /* #container #content ul li ul {
+    margin-top: 20px;
+  }
+  #container #content ul li ul li {
+    padding: 0;
+  }
+  #container #content ul li ul li a {
+    font-size: 1.5em;
+    font-weight: 300;
+   
+  }
+  #container #content ul li ul li{
+    font-size: 1em;
+    font-weight: 300;
+    color:tomato;
+   
+  } */
+
+  
+  /* global styles in SCSS Format
+
+
+  body {
+     margin: 0;
+     background: #F2F2F2;
+     font-family: 'Montserrat', sans-serif;
+     height: 100vh;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 70px auto;
+    height: 100%;
+
+    #content {
+        padding: 30px 50px;
+
+        ul {
+            list-style-type: none;
+            margin:0;padding:0;
+        
+            li {
+                background: #fff;
+                border-radius: 8px;
+                padding: 20px;
+                margin-bottom: 8px;
+        
+                a {
+                    font-size: 1.5em;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color:#00A8FF;
+                }
+        
+                ul {
+                    margin-top: 20px;
+                    
+                    li {
+                        padding:0;
+        
+                        a {
+                            font-size: 1em;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+*/

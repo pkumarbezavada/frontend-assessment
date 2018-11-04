@@ -1,0 +1,58 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+#addContactTitle{
+
+    text-align: center;
+    padding-bottom: 5rem;
+
+}
+
+form{
+
+    margin: auto;
+
+
+}
+.card{
+
+margin:auto;
+
+}
+
+
+#addContactButtons {
+    margin-top: 18px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#addContactButtons :first-child {
+    float: right;
+}
+
+#addContactButtons :nth-child(2) {
+    margin-right: 15px;
+    float: right;
+    
+}
+
+
+
+
+/* .card-body{
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+} */
+
+
+
+
+.form-control.ng-touched.ng-invalid{
+
+    border: 2px solid red;
+}
+
+

@@ -1,0 +1,19 @@
+<h1> Contact List</h1>
+<ul [@listStagger]="contactArray">
+<li *ngFor = "let contact of contactArray">
+<div><a >{{ contact.contactName }} </a>
+    <i class="material-icons" id="deleteContact" (click)="onDelete(contact.$key)">
+            delete</i>
+            <i class="material-icons" [routerLink]="['addContact/', contact.$key]" 
+            (click)="addContactService.populateForm(contact)"
+            id="editContact">
+                    border_color</i>
+    
+    </div>
+   
+          <ul>
+                <li><label>Phone: {{ contact.phone }}</label></li>
+            
+              </ul>
+</li>
+</ul>

@@ -1,0 +1,121 @@
+
+<div class="card w-50 contact-card card text-white bg-dark mb-3">
+    <div class="card-body">
+<form class="col-md-16" [formGroup]="this.addContactService.form" (ngSubmit)="onSubmit()"> 
+   <input type="hidden" formControlName="$key">   
+  <div class="form-group col-md-16">
+          <div class="form-row">
+              <div class="form-group col-md-12">
+        <div>
+            <label for="name">Name</label>
+                
+          <input type="text" 
+             class="form-control"  minlength="3" maxlength="20"
+            placeholder=" Name 3 to 20 characters long"
+            formControlName="contactName"
+           [ngClass]="{'is-invalid':submitted && formControls.contactName.errors}" >
+           <div class="invalid-feedback" *ngIf="submitted && formControls.contactName.errors">
+            Name is required.</div>
+        
+    
+          </div>
+        
+
+        <!-- <div class="alert alert-danger">
+<div *ngIf="contactName.errors.required">Contact Name Is required</div>
+<div *ngIf="contactName.errors.minlength">Contact Name Should Be Minimum 3 Characters</div>
+<div *ngIf="contactName.errors.maxlength">Contact Name Can Contain Maximun Of 20 Characters</div> 
+        </div> -->
+      </div></div>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <div>
+        <label for="phoneNumber">Phone Number</label>
+
+        <input type="tel"  
+        class="form-control"
+           placeholder="123-456-7890"
+           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+           required formControlName="phone" [ngClass]="{'is-invalid':submitted && formControls.phone.errors}"/> 
+           <div class="invalid-feedback" *ngIf="submitted && formControls.phone.errors">
+            <label *ngIf="formControls.phone.errors.required">This field is required.</label>
+            <label *ngIf="formControls.phone.errors.minlength">Atleast 10 numbers.</label>
+          </div>
+          </div>
+<!-- 
+           <div class="alert alert-danger"> 
+             
+              <div *ngIf="phoneNumber.errors.required">Phone Numaber Is required</div>
+              <div *ngIf="phoneNumber.errors.pattern">Phone Number Dosem't Match The Pattern</div>
+          
+          </div> -->
+      </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="inputImageUrl">Image Url</label>
+          <input  formControlName="ImageUrl"  type="text" class="form-control">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+            <label for="inputEmail">Email</label>
+            <input  formControlName="email" type="email" class="form-control"
+             [ngClass]="{'is-invalid':submitted && formControls.email.errors}">
+          </div>
+          <div class="invalid-feedback" *ngIf="submitted && formControls.email.errors">
+            Invalid email address.</div>
+        </div>
+  
+
+    <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="inputAddress">Address</label>
+      <input  formControlName="address"  type="text" class="form-control" placeholder="1234 Main St">
+    </div>
+    <div class="form-group col-md-12">
+      <label for="inputAddress2">Address 2</label>
+    <input  formControlName="address2"  type="text" class="form-control" placeholder="Apartment, studio, or floor">
+    </div>
+  </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">City</label>
+        <input  formControlName="city" type="text" class="form-control" >
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputState">State</label>
+        <input type="text"  formControlName="state"  class="form-control">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputZip">Zip</label>
+        <input  formControlName="zip" type="text" class="form-control">
+      </div>
+    
+    <div id="addContactButtons">
+        
+
+    <button (click)="clearForm()" type="submit" class="btn btn-primary btn-lg">Cancel</button>
+    <button type="submit" value="submit" class="btn btn-primary btn-lg">Save</button>
+   
+  </div>
+
+<div class="alert alert-info" *ngIf="showSuccessMessage">
+
+Saved Sucessfully
+
+</div>
+
+
+</div>
+</div>
+</form>
+</div>
+</div>
+
+
+
+    
+  
+
+
